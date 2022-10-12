@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev:remix": "remix watch",
+    "dev:arc": "cross-env NODE_ENV=development arc sandbox",
+    "dev": "remix build && run-p \"dev:*\"",
+    "start": "cross-env NODE_ENV=production arc sandbox",
+    "lint": "eslint ./app"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.10.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
+    "@remix-run/architect": "^1.7.2",
+    "@remix-run/node": "^1.7.2",
+    "@remix-run/react": "^1.7.2",
+    "cross-env": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "@architect/architect": "^10.3.4",
+    "@remix-run/dev": "^1.7.2",
+    "@remix-run/eslint-config": "^1.7.2",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
