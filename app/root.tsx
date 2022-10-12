@@ -21,10 +21,10 @@ export default function App() {
       <head>
         <Meta />
         <Links />
+        <GlobalStyle />
         {typeof document === 'undefined'
           ? '__STYLES__'
           : null}
-        <GlobalStyle />
       </head>
       <body>
         <Outlet />

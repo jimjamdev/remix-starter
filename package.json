@@ -7,9 +7,11 @@
     "dev:arc": "cross-env NODE_ENV=development arc sandbox",
     "dev": "remix build && run-p \"dev:*\"",
     "start": "cross-env NODE_ENV=production arc sandbox",
-    "lint": "eslint ./app"
+    "lint": "eslint ./app",
+    "lint:fix": "eslint ./app --fix"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.0",
     "@emotion/cache": "^11.10.3",
     "@emotion/react": "^11.10.4",
     "@emotion/server": "^11.10.0",
@@ -18,8 +20,11 @@
     "@remix-run/node": "^1.7.2",
     "@remix-run/react": "^1.7.2",
     "cross-env": "^7.0.3",
+    "graphql": "^16.6.0",
+    "graphql-ws": "^5.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "remix-graphql": "^0.2.1",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
